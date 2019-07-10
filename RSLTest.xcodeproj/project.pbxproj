@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D2C81BE222D5F89A006E87AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81BE122D5F89A006E87AC /* AppDelegate.swift */; };
-		D2C81BE422D5F89A006E87AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81BE322D5F89A006E87AC /* ViewController.swift */; };
 		D2C81BE722D5F89A006E87AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C81BE522D5F89A006E87AC /* Main.storyboard */; };
 		D2C81BEA22D5F89A006E87AC /* RSLTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C81BE822D5F89A006E87AC /* RSLTest.xcdatamodeld */; };
 		D2C81BEC22D5F8BE006E87AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C81BEB22D5F8BE006E87AC /* Assets.xcassets */; };
-		D2C81BEF22D5F8BF006E87AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C81BED22D5F8BF006E87AC /* LaunchScreen.storyboard */; };
 		D2C81BFA22D5F8BF006E87AC /* RSLTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81BF922D5F8BF006E87AC /* RSLTestTests.swift */; };
 		D2C81C0522D5F8BF006E87AC /* RSLTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C0422D5F8BF006E87AC /* RSLTestUITests.swift */; };
+		D2C81C1322D5F9DB006E87AC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1222D5F9DB006E87AC /* Models.swift */; };
+		D2C81C1922D5F9F6006E87AC /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1422D5F9F4006E87AC /* ApiCall.swift */; };
+		D2C81C1A22D5F9F6006E87AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1522D5F9F5006E87AC /* Extensions.swift */; };
+		D2C81C1B22D5F9F6006E87AC /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1622D5F9F5006E87AC /* OrderDetailsVC.swift */; };
+		D2C81C1C22D5F9F6006E87AC /* OrederListCustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1722D5F9F5006E87AC /* OrederListCustomTableCell.swift */; };
+		D2C81C1D22D5F9F6006E87AC /* OrderHistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C81C1822D5F9F5006E87AC /* OrderHistoryListVC.swift */; };
+		D2C81C2422D6003E006E87AC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C81C2322D6003E006E87AC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +42,9 @@
 /* Begin PBXFileReference section */
 		D2C81BDE22D5F89A006E87AC /* RSLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C81BE122D5F89A006E87AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2C81BE322D5F89A006E87AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2C81BE622D5F89A006E87AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2C81BE922D5F89A006E87AC /* RSLTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSLTest.xcdatamodel; sourceTree = "<group>"; };
 		D2C81BEB22D5F8BE006E87AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2C81BEE22D5F8BF006E87AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C81BF022D5F8BF006E87AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C81BF522D5F8BF006E87AC /* RSLTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSLTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C81BF922D5F8BF006E87AC /* RSLTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLTestTests.swift; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 		D2C81C0022D5F8BF006E87AC /* RSLTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSLTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C81C0422D5F8BF006E87AC /* RSLTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSLTestUITests.swift; sourceTree = "<group>"; };
 		D2C81C0622D5F8BF006E87AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C81C1222D5F9DB006E87AC /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D2C81C1422D5F9F4006E87AC /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		D2C81C1522D5F9F5006E87AC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D2C81C1622D5F9F5006E87AC /* OrderDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
+		D2C81C1722D5F9F5006E87AC /* OrederListCustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrederListCustomTableCell.swift; sourceTree = "<group>"; };
+		D2C81C1822D5F9F5006E87AC /* OrderHistoryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryListVC.swift; sourceTree = "<group>"; };
+		D2C81C2322D6003E006E87AC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +110,16 @@
 			isa = PBXGroup;
 			children = (
 				D2C81BE122D5F89A006E87AC /* AppDelegate.swift */,
-				D2C81BE322D5F89A006E87AC /* ViewController.swift */,
+				D2C81C1F22D5FCA3006E87AC /* APIManager */,
+				D2C81C1E22D5FC8D006E87AC /* AppUtility */,
+				D2C81C2022D5FCB8006E87AC /* Model */,
+				D2C81C2122D5FD2B006E87AC /* View */,
+				D2C81C2222D5FD3E006E87AC /* Controllers */,
 				D2C81BE522D5F89A006E87AC /* Main.storyboard */,
 				D2C81BEB22D5F8BE006E87AC /* Assets.xcassets */,
-				D2C81BED22D5F8BF006E87AC /* LaunchScreen.storyboard */,
 				D2C81BF022D5F8BF006E87AC /* Info.plist */,
 				D2C81BE822D5F89A006E87AC /* RSLTest.xcdatamodeld */,
+				D2C81C2322D6003E006E87AC /* Launch Screen.storyboard */,
 			);
 			path = RSLTest;
 			sourceTree = "<group>";
@@ -126,6 +140,47 @@
 				D2C81C0622D5F8BF006E87AC /* Info.plist */,
 			);
 			path = RSLTestUITests;
+			sourceTree = "<group>";
+		};
+		D2C81C1E22D5FC8D006E87AC /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D2C81C1522D5F9F5006E87AC /* Extensions.swift */,
+			);
+			path = AppUtility;
+			sourceTree = "<group>";
+		};
+		D2C81C1F22D5FCA3006E87AC /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2C81C1422D5F9F4006E87AC /* ApiCall.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		D2C81C2022D5FCB8006E87AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2C81C1222D5F9DB006E87AC /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2C81C2122D5FD2B006E87AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2C81C1722D5F9F5006E87AC /* OrederListCustomTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2C81C2222D5FD3E006E87AC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2C81C1622D5F9F5006E87AC /* OrderDetailsVC.swift */,
+				D2C81C1822D5F9F5006E87AC /* OrderHistoryListVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C81BEF22D5F8BF006E87AC /* LaunchScreen.storyboard in Resources */,
+				D2C81C2422D6003E006E87AC /* Launch Screen.storyboard in Resources */,
 				D2C81BEC22D5F8BE006E87AC /* Assets.xcassets in Resources */,
 				D2C81BE722D5F89A006E87AC /* Main.storyboard in Resources */,
 			);
@@ -259,9 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C81BE422D5F89A006E87AC /* ViewController.swift in Sources */,
+				D2C81C1922D5F9F6006E87AC /* ApiCall.swift in Sources */,
+				D2C81C1A22D5F9F6006E87AC /* Extensions.swift in Sources */,
+				D2C81C1C22D5F9F6006E87AC /* OrederListCustomTableCell.swift in Sources */,
+				D2C81C1D22D5F9F6006E87AC /* OrderHistoryListVC.swift in Sources */,
 				D2C81BE222D5F89A006E87AC /* AppDelegate.swift in Sources */,
 				D2C81BEA22D5F89A006E87AC /* RSLTest.xcdatamodeld in Sources */,
+				D2C81C1B22D5F9F6006E87AC /* OrderDetailsVC.swift in Sources */,
+				D2C81C1322D5F9DB006E87AC /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +363,6 @@
 				D2C81BE622D5F89A006E87AC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D2C81BED22D5F8BF006E87AC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2C81BEE22D5F8BF006E87AC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

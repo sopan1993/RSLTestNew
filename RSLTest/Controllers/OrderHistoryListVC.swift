@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  RSLTest
 //
-//  Created by Kondya on 30/06/19.
-//  Copyright © 2019 bitware. All rights reserved.
+//  Created by Shirish Vispute on 10/07/19.
+//  Copyright © 2019 Shirish Vispute. All rights reserved.
 //
 
 import UIKit
